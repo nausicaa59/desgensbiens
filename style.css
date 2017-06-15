@@ -187,9 +187,23 @@ article .vous-aimerez-aussi .titre {
 article .vous-aimerez-aussi .previews .preview-article {
   background-color: red;
   height: 250px;
+  padding: 0px;
 }
-article .vous-aimerez-aussi .previews .preview-article:hover {
-  background-color: #ddd;
+article .vous-aimerez-aussi .previews .preview-article:hover:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #555;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+article .vous-aimerez-aussi .previews .preview-article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 footer {
   margin-top: 0px;
