@@ -1,8 +1,47 @@
+/*====================================
+	Animations
+  ====================================*/
+
+@keyframes title_hover 
+{
+    0%
+    {
+		border-color:#555;
+    }
+    
+    100%
+    {
+    	border-color:#fc0;
+    }
+}
+
+
+@keyframes diminuer_opacity 
+{
+    0%
+    {
+		opacity: 0.4;
+    }
+    
+    100%
+    {
+    	opacity: 0.2;
+    }
+}
+
+
+
+
+/*====================================
+	Globale
+  ====================================*/
+
 *
 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 }
+
 
 .souligner
 {
@@ -25,24 +64,56 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
+.titre_preview_bloc_media
+{
+	position:absolute;
+	bottom:20px;
+	right:0px;
+	width:95%;
+	color:white;
+	display: block;
+	font-size: 20px;
+	border-left: 3px solid #fc0; 
+	padding-left: 20px;	
+	padding-right:7%;	
+}
+
+
+/*====================================
+	Header
+  ====================================*/
 
 header 
 {
-	background-color:#291b12;
-	padding:10px;
-	color:white;
-	margin-bottom:50px;
+	text-align: left;
+	background-color:#555;
 
-
-	.social
+	a.call-to-action
 	{
-		text-align: right;
-		font-size: 14px;
-	}	
+		
+		display: inline-block;
+		color:white;
+		padding:7px 0px;
+		text-decoration: none;
+
+		span
+		{
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+
+	&:hover
+	{
+		background-color:#fc0;
+	}
 }
 
-nav
+nav.nav_destokp
 {
+	padding-top: 100px;
+
+
 	.logo
 	{
 		text-align: center;
@@ -55,7 +126,7 @@ nav
 
 	.menu
 	{
-		margin-top:40px;
+		margin-top:20px;
 		margin-bottom:70px;
 
 		ul
@@ -91,6 +162,11 @@ nav
 		}
 	}
 }
+
+
+/*====================================
+	Article
+  ====================================*/
 
 article
 {
@@ -235,6 +311,7 @@ article
 					.credit
 					{
 						text-transform: uppercase;
+						padding-top:15px;
 
 						a
 						{
@@ -259,6 +336,34 @@ article
 				}
 			}
 		}
+
+		.seconde-part
+		{
+			.auto-promo
+			{
+				width:80%;
+				height: 450px;
+				margin-left: auto;
+				margin-right: auto;
+				background-color:#f1f1f1;
+				text-align: center;
+				position:relative;
+
+				.slogan
+				{
+					display: block;
+					position: absolute;
+					top:0px;
+					bottom:0px;
+					left:0px;
+					right: 0px;
+					margin:auto;
+					width:80%;
+					height:200px;					
+				}
+
+			}
+		}
 	}
 
 	.vous-aimerez-aussi
@@ -266,8 +371,8 @@ article
 		margin-top:60px;
 		width: 100%;
 		background-color: #f2f2f2;
-		padding-top:30px;
-		padding-bottom:100px;
+		padding-top:70px;
+		padding-bottom:130px;
 
 		.titre
 		{
@@ -282,37 +387,53 @@ article
 		{
 			.preview-article
 			{
-				background-color: red;
-				height: 250px;
+				background-color: #3e3e3e;
+				height: 380px;
 				padding:0px;
+				position:relative;
+				border-bottom:8px solid #555;
 
 				&:hover
-				{
-					&:after
+				{					
+					animation-name: title_hover;
+					animation-duration: 0.5s;
+					border-color:#fc0;
+
+					img
 					{
-						content:"";
-						width:100%;
-						height:100%;
-						display:block;
-						background-color:#555;
-						position:absolute;
-						top:0px;
-						left:0px;
-						opacity:0.5;
+						opacity: 0.3;
 					}
 				}
 
-				img
+				a
 				{
 					width:100%;
 					height:100%;
-					object-fit: cover;
+					display: block;	
+
+					img
+					{
+						width:100%;
+						height:100%;
+						object-fit: cover;
+						opacity: 0.2;
+					}
+
+					.preview_titre
+					{
+						.titre_preview_bloc_media;
+					}				
 				}
 			}
 		}
 	}
 }
 
+
+
+/*====================================
+	Footer
+  ====================================*/
 
 footer
 {
@@ -405,6 +526,10 @@ footer
 }
 
 
+
+/*====================================
+	Index
+  ====================================*/
 .bloc_hp
 {
 	margin-bottom:30px;
@@ -453,13 +578,7 @@ footer
 
 				span
 				{
-					position: absolute;
-					bottom:0px;
-					left:0px;
-					padding:25px 10px;	
-					color:white;
-					text-transform: uppercase;
-					font-size: 16px;				
+					.titre_preview_bloc_media;	
 				}
 			}
 		}
@@ -467,20 +586,100 @@ footer
 }
 
 
+/*====================================
+	Mobile
+  ====================================*/
+
+@media (max-width: 1024px){
+	nav
+	{
+		.menu
+		{
+			ul
+			{
+				li
+				{
+					a
+					{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+/*====================================
+	Mobile
+  ====================================*/
 
 @media (max-width: 576px){
-	header 
+	body
 	{
-		.social
+		padding-top:100px;
+	}
+
+	header
+	{
+		display: none;
+	}
+
+	nav
+	{
+		&.nav_destokp
 		{
-			display: none;
+			display: none!important;
 		}
 
-		.newletters
+		&.nav_mobile
 		{
-			text-align: center;
-		}	
+			display: block!important;
+			background-color: white;
+			background-image: none;
+
+			.navbar-toggle
+			{
+			    border-color:white;
+			    background-color: #fc0;
+
+			    .icon-bar
+			    {
+			    	color:white;
+			    	background-color: white;
+			    }
+
+		    	&:hover, &:focus
+		    	{
+		    		background-color: white;
+		    		border-color:#fc0;
+
+				    .icon-bar
+				    {
+				    	color:#fc0;
+				    	background-color: #fc0;
+				    }
+		    	}
+			}
+		}
+
+		.logo
+		{
+			img
+			{
+				width:200px;
+				padding:35px 0px 60px 0px;
+			}			
+		}
+
+		.menu
+		{
+			display: none;
+		}		
 	}
+
 
 	.bloc_hp
 	{
@@ -498,6 +697,76 @@ footer
 					height:300px;
 				}
 			}		
+		}
+	}
+
+
+	article
+	{
+		.intro
+		{
+			.first-part
+			{
+				border-right:0px solid black;
+
+				h1
+				{
+					font-size: 25px;
+				}
+
+				p
+				{
+					font-size: 18px;
+					padding-bottom:0px;
+					margin-bottom:0px;
+				}
+			}
+
+			.second-part
+			{
+				margin-top:30px;
+				border-left:1px solid black;
+				margin-left:15px;
+
+				.auteur
+				{
+					font-size: 14px;
+				}
+
+				ul
+				{
+					padding-top:10px;
+					margin-bottom:0px;
+					padding-bottom:10px;
+				}
+			}
+		}
+
+
+		.corps
+		{
+			padding-top:30px;
+
+			.first-part
+			{
+				p
+				{
+					font-size: 18px;
+				}
+
+				.image-conteneur
+				{
+					.info
+					{
+						padding-left: 10px;
+
+						.credit
+						{
+							font-size: 12px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
