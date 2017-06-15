@@ -1,0 +1,316 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+.souligner {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+}
+.degrader_transparent_noir {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+49,000000+93&0+49,1+93 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 49%, #000000 93%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 49%, #000000 93%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 49%, #000000 93%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+header {
+  background-color: #291b12;
+  padding: 10px;
+  color: white;
+  margin-bottom: 50px;
+}
+header .social {
+  text-align: right;
+  font-size: 14px;
+}
+nav .logo {
+  text-align: center;
+}
+nav .logo img {
+  width: 300px;
+}
+nav .menu {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+nav .menu ul {
+  text-align: center;
+  border-top: 2px solid #cccccc;
+}
+nav .menu ul li {
+  display: inline-block;
+  padding: 25px 25px 0px 25px;
+}
+nav .menu ul li a {
+  color: black;
+  position: relative;
+  font-size: 22px;
+}
+nav .menu ul li a:hover {
+  text-decoration: none;
+}
+nav .menu ul li:hover a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+}
+article .intro .first-part {
+  border-right: 1px solid black;
+}
+article .intro .first-part h1 {
+  color: black;
+  padding-right: 60px;
+  margin-top: 0px;
+  font-size: 39px;
+}
+article .intro .first-part p {
+  color: #555;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+article .intro .second-part .auteur {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+article .intro .second-part .auteur .first-word {
+  color: #555;
+  font-style: italic;
+}
+article .intro .second-part .auteur .identite {
+  border-bottom: 1px dashed #555;
+}
+article .intro .second-part ul {
+  padding-left: 0px;
+  padding-top: 20px;
+}
+article .intro .second-part ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+article .intro .second-part ul li i {
+  font-size: 30px;
+}
+article .intro .second-part ul li i.fa-facebook {
+  color: #3c5a99;
+}
+article .intro .second-part ul li i.fa-google-plus {
+  color: #dc4e41;
+}
+article .intro .second-part ul li i.fa-twitter {
+  color: #1da1f2;
+}
+article .intro .second-part ul li i.fa-envelope {
+  color: black;
+}
+article .intro .second-part ul li:hover i {
+  color: #555;
+}
+article .image-intro {
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+}
+article .image-intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+article .corps {
+  padding-top: 70px;
+}
+article .corps .first-part p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+article .corps .first-part .image-conteneur {
+  padding-bottom: 45px;
+  padding-top: 20px;
+}
+article .corps .first-part .image-conteneur img {
+  width: 100%;
+}
+article .corps .first-part .image-conteneur .info {
+  margin-top: 20px;
+  border-left: 1px solid black;
+  padding-left: 30px;
+  color: #555;
+}
+article .corps .first-part .image-conteneur .info .credit {
+  text-transform: uppercase;
+}
+article .corps .first-part .image-conteneur .info .credit a {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+}
+article .corps .first-part .publier-le {
+  font-style: italic;
+  color: #555;
+  font-size: 16px;
+}
+article .corps .first-part .publier-le a {
+  color: black;
+  font-weight: bold;
+}
+article .vous-aimerez-aussi {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+article .vous-aimerez-aussi .titre {
+  width: 100%;
+  font-size: 39px;
+  text-align: center;
+  color: black;
+  padding: 0px 10px 45px 25px;
+}
+article .vous-aimerez-aussi .previews .preview-article {
+  background-color: red;
+  height: 250px;
+}
+article .vous-aimerez-aussi .previews .preview-article:hover {
+  background-color: #ddd;
+}
+footer {
+  margin-top: 0px;
+  background-color: #303338;
+}
+footer .first-part {
+  min-height: 150px;
+  padding: 25px 0px;
+}
+footer .first-part .title {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 10px;
+}
+footer .first-part .newsletter .conteneur_champs_block_newsletter {
+  position: relative;
+}
+footer .first-part .newsletter .conteneur_champs_block_newsletter input {
+  display: block;
+  width: 100%;
+  padding: 10px 50px 10px 10px;
+  color: white;
+  background-color: #454851;
+  border-color: #454851;
+  border-width: 0px;
+}
+footer .first-part .newsletter .conteneur_champs_block_newsletter span {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #feffff;
+}
+footer .first-part .plan ul {
+  padding-left: 0px;
+}
+footer .first-part .plan ul li {
+  padding: 3px 0px;
+}
+footer .first-part .plan ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .second-part {
+  background-color: #202020;
+}
+footer .second-part ul {
+  text-align: center;
+  margin-bottom: 0px;
+}
+footer .second-part ul li {
+  color: white;
+  padding: 15px 15px;
+  display: inline-block;
+}
+footer .second-part ul li a {
+  color: white;
+  text-decoration: none;
+}
+.bloc_hp {
+  margin-bottom: 30px;
+}
+.bloc_hp .preview_2c a {
+  display: block;
+  width: 100%;
+  background-color: red;
+  height: 500px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.bloc_hp .preview_full a {
+  display: block;
+  width: 100%;
+  background-color: green;
+  height: 500px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.bloc_hp .preview_2c a,
+.bloc_hp .preview_full a {
+  display: block;
+  position: relative;
+}
+.bloc_hp .preview_2c a div,
+.bloc_hp .preview_full a div {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+49,000000+93&0+49,1+93 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 49%, #000000 93%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 49%, #000000 93%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 49%, #000000 93%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.bloc_hp .preview_2c a div span,
+.bloc_hp .preview_full a div span {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 25px 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+@media (max-width: 576px) {
+  header .social {
+    display: none;
+  }
+  header .newletters {
+    text-align: center;
+  }
+  .bloc_hp .row .preview_2c:first-child {
+    margin-bottom: 30px;
+  }
+  .bloc_hp .row .preview_2c a {
+    height: 300px;
+  }
+}
