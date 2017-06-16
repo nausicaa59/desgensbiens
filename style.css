@@ -484,6 +484,9 @@ footer .second-part ul li a {
   .bloc_hp .row .preview_2c a {
     height: 300px;
   }
+  .bloc_hp .row .preview_full a {
+    height: 300px;
+  }
   article .intro .first-part {
     border-right: 0px solid black;
   }
