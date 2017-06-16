@@ -424,10 +424,26 @@ footer .second-part ul li a {
   ====================================*/
 @media (max-width: 576px) {
   body {
-    padding-top: 100px;
+    padding-top: 130px;
   }
   header {
-    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+  }
+  header a.call-to-action {
+    font-size: 13px;
+  }
+  footer .plan {
+    padding-top: 35px;
+  }
+  footer .plan ul {
+    margin-bottom: 0px;
+  }
+  footer .newsletter {
+    padding-top: 35px;
+    padding-bottom: 25px;
   }
   nav.nav_destokp {
     display: none!important;
@@ -503,5 +519,18 @@ footer .second-part ul li a {
   }
   article .corps .first-part .image-conteneur .info .credit {
     font-size: 12px;
+  }
+  article .corps .seconde-part {
+    margin-top: 60px;
+  }
+  article .corps .seconde-part .auto-promo {
+    width: 100%;
+  }
+  article .vous-aimerez-aussi {
+    padding-bottom: 40px;
+  }
+  article .vous-aimerez-aussi .previews .preview-article {
+    margin-bottom: 30px;
+    height: 280px;
   }
 }
