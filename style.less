@@ -164,11 +164,65 @@ nav.nav_destokp
 }
 
 
+.page_simple
+{
+	h1
+	{
+		color:black;
+		padding-right: 60px;
+		margin-top:0px;
+		font-size: 39px;
+	}
+
+	h2
+	{
+		margin-top:40px;
+		margin-bottom:0px;
+	}
+
+	p
+	{
+		color:#555;
+		font-size: 20px;
+		padding-top:20px;
+		padding-bottom:20px;
+	}		
+}
+
+
 /*====================================
 	liste article
   ====================================*/
 .liste_article
 {
+	.description
+	{
+		text-align: center;
+
+		h1
+		{
+			color:black;
+			padding-bottom:10px;
+			display:inline-block;
+			position: relative;
+			padding-left:30px;
+			padding-right: 30px;
+			border-left: 1px solid #fc0;
+			border-right: 1px solid #fc0;
+			font-size: 35px;
+		}
+
+		p
+		{
+			padding-top:20px;
+			font-size:20px;
+		}
+
+		padding-top:40px;
+		padding-bottom:140px;
+	}
+
+
 	.promo
 	{
 		padding-bottom:120px;
@@ -757,6 +811,17 @@ footer
 
 	.liste_article
 	{
+		.description
+		{
+			padding-top:0px;
+			padding-bottom:50px;
+
+			h1
+			{
+				font-size: 30px;
+			}
+		}
+		
 		.promo
 		{
 			padding-bottom: 80px;
@@ -824,7 +889,7 @@ footer
 				}
 			}
 
-			&:nth-child(3), &:nth-child(7)
+			&:nth-child(4), &:nth-child(8)
 			{
 				margin-bottom: 0px;
 			}
@@ -842,6 +907,17 @@ footer
 @media (min-width: 0px) and (max-width: 576px){
 	.liste_article
 	{
+		.description
+		{
+			padding-top:0px;
+			padding-bottom:50px;
+
+			h1
+			{
+				font-size: 30px;
+			}
+		}
+
 		.promo
 		{
 			padding-bottom: 80px;
@@ -894,7 +970,7 @@ footer
 				}
 			}
 
-			&:nth-child(3), &:nth-child(7)
+			&:nth-child(4), &:nth-child(8)
 			{
 				margin-bottom: 40px;
 			}

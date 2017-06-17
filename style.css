@@ -116,9 +116,45 @@ nav.nav_destokp .menu ul li:hover a:after {
   bottom: -5px;
   left: 0px;
 }
+.page_simple h1 {
+  color: black;
+  padding-right: 60px;
+  margin-top: 0px;
+  font-size: 39px;
+}
+.page_simple h2 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.page_simple p {
+  color: #555;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 /*====================================
 	liste article
   ====================================*/
+.liste_article .description {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+.liste_article .description h1 {
+  color: black;
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px solid #fc0;
+  border-right: 1px solid #fc0;
+  font-size: 35px;
+}
+.liste_article .description p {
+  padding-top: 20px;
+  font-size: 20px;
+}
 .liste_article .promo {
   padding-bottom: 120px;
 }
@@ -489,6 +525,13 @@ footer .second-part ul li a {
   nav.nav_destokp .menu ul li a {
     font-size: 18px;
   }
+  .liste_article .description {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .liste_article .description h1 {
+    font-size: 30px;
+  }
   .liste_article .promo {
     padding-bottom: 80px;
     padding-top: 70px;
@@ -531,8 +574,8 @@ footer .second-part ul li a {
   .liste_article .preview .info a .titre {
     font-size: 20px;
   }
-  .liste_article .preview:nth-child(3),
-  .liste_article .preview:nth-child(7) {
+  .liste_article .preview:nth-child(4),
+  .liste_article .preview:nth-child(8) {
     margin-bottom: 0px;
   }
 }
@@ -540,6 +583,13 @@ footer .second-part ul li a {
 	Mobile
   ====================================*/
 @media (min-width: 0px) and (max-width: 576px) {
+  .liste_article .description {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .liste_article .description h1 {
+    font-size: 30px;
+  }
   .liste_article .promo {
     padding-bottom: 80px;
     padding-top: 70px;
@@ -568,8 +618,8 @@ footer .second-part ul li a {
   .liste_article .preview .info a .titre {
     font-size: 20px;
   }
-  .liste_article .preview:nth-child(3),
-  .liste_article .preview:nth-child(7) {
+  .liste_article .preview:nth-child(4),
+  .liste_article .preview:nth-child(8) {
     margin-bottom: 40px;
   }
   body {
