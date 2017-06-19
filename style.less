@@ -195,6 +195,41 @@ nav.nav_destokp
   ====================================*/
 .liste_article
 {
+	.listepage
+	{
+		padding-top:0px;
+		padding-bottom:120px;
+
+		ul
+		{
+			margin-top: 0px;
+			padding-left:0px;
+
+			li
+			{
+				display: inline-block;				
+				margin-bottom: 10px;
+				margin-right: 5px;
+
+				a
+				{
+					padding:8px 13px;
+					border:2px solid #555;
+					color:#555;
+					text-decoration: none;
+				}
+
+				&:hover, .active
+				{
+					a
+					{
+						border:2px solid #fc0;
+					}					
+				}
+			}
+		}
+	}
+
 	.description
 	{
 		text-align: center;
@@ -838,6 +873,12 @@ footer
 		}
 
 
+		.listepage
+		{
+			padding-top:80px;
+			padding-bottom:10px;
+		}
+
 		.preview
 		{
 			margin-bottom:80px;
@@ -907,6 +948,12 @@ footer
 @media (min-width: 0px) and (max-width: 576px){
 	.liste_article
 	{
+		.listepage
+		{
+			padding-top:80px;
+			padding-bottom:10px;
+		}
+
 		.description
 		{
 			padding-top:0px;

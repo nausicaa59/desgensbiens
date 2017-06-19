@@ -135,6 +135,29 @@ nav.nav_destokp .menu ul li:hover a:after {
 /*====================================
 	liste article
   ====================================*/
+.liste_article .listepage {
+  padding-top: 0px;
+  padding-bottom: 120px;
+}
+.liste_article .listepage ul {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.liste_article .listepage ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.liste_article .listepage ul li a {
+  padding: 8px 13px;
+  border: 2px solid #555;
+  color: #555;
+  text-decoration: none;
+}
+.liste_article .listepage ul li:hover a,
+.liste_article .listepage ul li .active a {
+  border: 2px solid #fc0;
+}
 .liste_article .description {
   text-align: center;
   padding-top: 40px;
@@ -540,6 +563,10 @@ footer .second-part ul li a {
     width: 100%;
     height: 250px;
   }
+  .liste_article .listepage {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
   .liste_article .preview {
     margin-bottom: 80px;
   }
@@ -583,6 +610,10 @@ footer .second-part ul li a {
 	Mobile
   ====================================*/
 @media (min-width: 0px) and (max-width: 576px) {
+  .liste_article .listepage {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
   .liste_article .description {
     padding-top: 0px;
     padding-bottom: 50px;
