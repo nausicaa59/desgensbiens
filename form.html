@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+
+		<!-- Fonts bootstrap -->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+		<!-- Style -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<!-- Navigation Destokp -->
+		<header>
+			<div class="container">
+				<a href="article.html" class="call-to-action">Envie de faire connaitre quelqu'un ? <span>Contactez-nous !</span></a>
+			</div>
+		</header>
+
+		<nav class="nav_destokp">
+			<div class="container logo">
+				<a href="test.html">
+					<img src="http://press.dailymotion.com/fr/wp-content/uploads/sites/4/2010/06/Dailymotion_Dark_logo.png">
+				</a>
+			</div>
+			<div class="container menu">
+				<ul>
+					<li><a href="article.html">Histoire</a></li>
+					<li><a href="article.html">Actuel</a></li>
+					<li><a href="article.html">Coup de coeur</a></li>
+					<li><a href="article.html">Qui somme nous</a></li>
+				</ul>
+			</div>			
+		</nav>
+
+	    <!-- Navigation Mobile -->
+	    <nav class="nav_mobile navbar navbar-default navbar-fixed-top" role="navigation" style="display:none;">
+	        <div class="container">
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand page-scroll" href="file:///home/nausicaa/site/divers/test.html">
+	                	<img src="http://press.dailymotion.com/fr/wp-content/uploads/sites/4/2010/06/Dailymotion_Dark_logo.png" height="100%">
+	                </a>
+	            </div>
+
+	            <!-- liens -->
+	            <div class="collapse navbar-collapse navbar-ex1-collapse">
+	                <ul class="nav navbar-nav">
+	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+	                    <li class="hidden">
+	                        <a class="page-scroll" href="#page-top"></a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#about">Histoire</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#services">Actuel</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#contact">Coup de coeur</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#contact">Qui somme nous</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+
+
+	    <div class="container contacter_nous">	   
+	    	<h1>Contactez-nous !</h1> 	
+	    	<div class="row">
+	    		<div class="col-md-6 col-sm-6 first">
+		    		<form method="POST">
+		    			<input type="hidden" name="devis_post" value="1">
+		    			<label>Nom<span style="color:red">*</span></label>
+		    			<input type="text" name="contact_nom" value="">
+		    			<label>Prénom<span style="color:red">*</span></label>
+		    			<input type="text" name="contact_prenom" value="">
+		    			<label>Email<span style="color:red">*</span></label>
+		    			<input type="text" name="contact_email" value=""><label>Sujet<span style="color:red">*</span></label>
+		    			<select name="contact_sujet">
+		    				<option value="Commercial">Faire connaitre quelqu'un</option>
+		    				<option value="Autres">Problème sur le site</option>
+		    			</select><label>Votre Message<span style="color:red">*</span></label>
+		    			<textarea name="contact_message"></textarea><input type="submit" value="ENVOYER" class="bouton-action-plein-bleu">
+		    		</form>
+		    	</div>
+	    		<div class="col-md-6 col-sm-6 second">
+		    		<img src="http://lorempixel.com/output/people-q-c-640-640-2.jpg">
+		    	</div>
+	    	</div>
+	    </div>
+
+		
+		<footer>
+			<div class="first-part">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 soutenez_nous">
+							<div class="title">Soutenez-nous !</div>
+							<img src="https://atelierangelmj.files.wordpress.com/2017/05/tipeee2017.png">
+						</div>
+						<div class="col-md-4 col-sm-12 plan">
+							<div class="title">Plan du site</div>
+							<ul>
+								<li><a href="article.html">Histoire</a></li>
+								<li><a href="article.html">Actuel</a></li>
+								<li><a href="article.html">Coup de coeur</a></li>
+								<li><a href="article.html">Qui somme nous</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-sm-12 newsletter">
+							<div class="title">Recevoir notre newsletter</div>
+							<div class="conteneur_champs_block_newsletter">
+								<input type="text" placeholder="Votre adresse e-mail" id="footer_newsletter">
+								<span id="bt_footer_newsletter">OK</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="second-part">
+				<div class="container">
+					<div class="row">
+						<ul>
+							<li><a href="cgu.html">CGU</a></li>
+							<li><a href="article.html">Politique concernants les Coockie</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+		</footer>
+	</body>
+</html>
